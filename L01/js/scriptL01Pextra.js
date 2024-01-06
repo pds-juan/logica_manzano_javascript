@@ -1,0 +1,11 @@
+// c) Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último o percentual correspondente de votos em branco em relação à quantidade de eleitores.
+
+var votos_A = parseInt(prompt('Digite a quantidade de votos para o candidato A:'))
+var votos_B = parseInt(prompt('Digite a quantidade de votos para o candidato B:'))
+var votos_C = parseInt(prompt('Digite a quantidade de votos para o candidato C:'))
+var votos_nulos = parseInt(prompt('Digite a quantidade de votos nulos:'))
+var votos_brancos = parseInt(prompt('Digite a quantidade de votos em branco:'))
+var total_eleitores = votos_A + votos_B + votos_C + votos_brancos + votos_nulos
+var votos_validos = votos_A + votos_B + votos_C
+
+alert('Total de eleitores: '+total_eleitores+'.\nPercentual de votos válidos: '+(100/total_eleitores * votos_validos)+'%.\nPercentual de votos para o Candidato A: '+(100/total_eleitores * votos_A)+'%.\nPercentual de votos para o Candidato B: '+(100/total_eleitores * votos_B)+'%.\nPercentual de votos para o Candidato C: '+(100/total_eleitores * votos_C)+'%.\nPercentual de votos nulos: '+(100/total_eleitores * votos_nulos)+'%.\nPercentual de votos em branco: '+(100/total_eleitores * votos_brancos)+'%.')
